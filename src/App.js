@@ -3,7 +3,7 @@
 import './App.css';
 import Header from './Component/Header'
 import Home from './Component/Home';
-import SignUp from './Component/SignUp';
+// import SignUp from './Component/SignUp';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Header/>
       <Home/>
       <br/>
-      <p>we are checking the git pull request</p>
-      <SignUp/>
+      {/* <p>we are checking the git pull request</p>
+      <SignUp/> */}
     </div>
   );
 }

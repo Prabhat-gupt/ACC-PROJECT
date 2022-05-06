@@ -1,0 +1,131 @@
+.h-primary{
+    color: #ffffff;
+    position: relative;
+    top: 156px;
+    right: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 82.031px;
+    line-height: 42px;
+    /* position: absolute;
+width: 3541px;
+height: 505.43px;
+left: 213px;
+top: 1013px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 218.031px;
+line-height: 266px; */
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+#home::before{
+    content: "";
+    background: url("Image/hb.png") no-repeat center center/cover; 
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    margin-bottom: 0px;
+}
+
+/* #home{
+    background: url("Image/hb.png") no-repeat center center/cover;
+    height: 103vh;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    
+} */
+/* #home p{
+    color: #ffffff;
+    position: relative;
+    top: 184px;
+    right: 114px;
+    font-size: 35px;
+    background-color: black;
+    background: #393939;
+    opacity: 0.79;
+    width: 1307px;
+} */
+.hsign{
+    position: relative;
+    top: 243px;
+    right: 40px;
+    background: #15535B;
+    color: #ffffff;
+    border-color: #15535B;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+.pcontain{
+    border: 2px #393939 solid;
+    opacity: 0.79;
+    position: relative;
+    top: 184px;
+    right: 114px;
+    background:#393939;
+    width: 1307px;
+}
+.pcontain p{
+    color: #ffffff;
+    font-size: 35px;
+    position: relative;
+    left: 68px;
+}
+
+.para{
+    border: 2px rgb(255, 255, 255) solid;
+    color: #000000;
+    position: relative;
+    width: 917px;
+    height: 171px;
+    left: 157px;
+    top: 40px;
+}
+.para p{
+    position: relative;
+    left: 60px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+}
+.homeflex{
+    border: 2px rgb(255, 255, 255) solid;
+    width: 1300px;
+    position: relative;
+    top: 150px;
+    left: 220px;
+}
+.homeflex h2{
+    font-weight: bold;
+}
+.homeflex p{
+    font-weight:light;
+    font-size:18px;
+}
+
+.homeflex .flex2{
+    /* text-align: right; */
+    position: relative;
+    left: 700px;
+}

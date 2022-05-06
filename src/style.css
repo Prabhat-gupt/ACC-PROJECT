@@ -44,7 +44,7 @@ form button{
     left: 141px;
 }
 body {
-    overflow-y: hidden; /* Hide vertical scrollbar */
+      /* overflow-y: hidden;   Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 .nav-link {
@@ -146,35 +146,22 @@ form a.nav-link.active:hover{
 
 /* HOME PAGE CSS START  */
 
-.h-primary{
+/* .h-primary{
     color: #ffffff;
     position: relative;
     top: 156px;
     right: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 100;
     font-size: 82.031px;
     line-height: 42px;
-    /* position: absolute;
-width: 3541px;
-height: 505.43px;
-left: 213px;
-top: 1013px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 218.031px;
-line-height: 266px; */
 }
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
     height: 750px;
-    /* justify-content: center;
-    align-items: center; */
 
 }
 #home::before{
@@ -187,18 +174,9 @@ line-height: 266px; */
     width: 100%;
     z-index: -1;
     opacity: .89;
+    margin-bottom: 0px;
 }
-/* #home p{
-    color: #ffffff;
-    position: relative;
-    top: 184px;
-    right: 114px;
-    font-size: 35px;
-    background-color: black;
-    background: #393939;
-    opacity: 0.79;
-    width: 1307px;
-} */
+
 .hsign{
     position: relative;
     top: 243px;
@@ -225,4 +203,24 @@ line-height: 266px; */
     font-size: 35px;
     position: relative;
     left: 68px;
-}
+} */
+
+/* #home{
+    background: url("Image/hb.png") no-repeat center center/cover;
+    height: 103vh;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    
+} */
+/* #home p{
+    color: #ffffff;
+    position: relative;
+    top: 184px;
+    right: 114px;
+    font-size: 35px;
+    background-color: black;
+    background: #393939;
+    opacity: 0.79;
+    width: 1307px;
+} */
