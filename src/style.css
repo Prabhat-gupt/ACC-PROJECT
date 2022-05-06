@@ -1,0 +1,228 @@
+
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+.signup{
+    background: url("./Image/b1.png" ) no-repeat center center/cover;
+    height: 100vh;
+    
+}
+.container{
+    width: 700px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+form{
+    position: relative;
+    left: 335px;
+    top: 50px;
+    border-radius: 20px;
+    border-width: 60px;
+}
+#formimg{
+    position: absolute;
+width: 372px;
+height: 180.95px;
+left: 264px;
+top: 109px;
+}
+
+form img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+form h2{
+    text-align: center;
+    /* font-weight: bold; */
+    color:  #15535B;
+    text-shadow: 1px 1px 3px #000000;
+}
+form button{
+    position: relative;
+    left: 141px;
+}
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000205;
+    text-decoration: none;
+    transition: color .15s;
+} 
+
+form a.nav-link.active:hover{
+
+    text-decoration: line-through;
+}
+.input-field{
+    width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.input-field{
+        color: #15535B;
+}
+.frd{
+    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+  }
+#upImage{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    top: 90px;
+    right: 85px;
+    mix-blend-mode: normal;
+    height: 520px;
+    z-index: 5;
+    opacity: 2;
+    box-shadow: 2px 0px 6px 7px rgb(0 0 0 / 25%);
+}
+::placeholder{
+    color: #8ABCC2;
+    /* text-shadow:1px 1px 3px #000000; ; */
+}
+
+.flexcolor{
+    color:  #15535B;
+    border:2px white solid;
+    background-color: white;
+    justify-content: center;
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #15535B;
+    height: 520px;
+    width: 540px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    
+ 
+}
+.imgcontain{
+    border: 2px white solid;
+}
+.btn{
+    background-color: #15535B;
+    border-color: #15535B;
+    justify-content: center;
+}
+.formc{
+    justify-content: center;
+}
+.butt{
+    justify-content: center;
+    position: relative;
+    top: -16px;
+    left: 207px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    font-size: 20px;
+    width: 130px;
+    border-radius: 10px;
+}
+.click{
+    color: #15535B;
+}
+.click:hover{
+    cursor: pointer;
+    color: blue;
+}
+.para{
+    text-align: center;
+}
+
+/* HOME PAGE CSS START  */
+
+.h-primary{
+    color: #ffffff;
+    position: relative;
+    top: 156px;
+    right: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 82.031px;
+    line-height: 42px;
+    /* position: absolute;
+width: 3541px;
+height: 505.43px;
+left: 213px;
+top: 1013px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 218.031px;
+line-height: 266px; */
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+#home::before{
+    content: "";
+    background: url("Image/hb.png") no-repeat center center/cover; 
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+/* #home p{
+    color: #ffffff;
+    position: relative;
+    top: 184px;
+    right: 114px;
+    font-size: 35px;
+    background-color: black;
+    background: #393939;
+    opacity: 0.79;
+    width: 1307px;
+} */
+.hsign{
+    position: relative;
+    top: 243px;
+    right: 40px;
+    background: #15535B;
+    color: #ffffff;
+    border-color: #15535B;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+.pcontain{
+    border: 2px #393939 solid;
+    opacity: 0.79;
+    position: relative;
+    top: 184px;
+    right: 114px;
+    background:#393939;
+    width: 1307px;
+}
+.pcontain p{
+    color: #ffffff;
+    font-size: 35px;
+    position: relative;
+    left: 68px;
+}

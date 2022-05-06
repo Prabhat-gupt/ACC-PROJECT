@@ -1,18 +1,16 @@
-import React, { Component } from "react";
-// import logo from './Image/acc.png'
+import React from 'react'
 
-export default class navbar extends Component {
-  render() {
-    return (
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light ">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-            <img src="./Image/acc.png" alt="" width="50" height="50" class="d-inline-block align-text-top"/>
+export default function Header() {
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-white bg-white ">
+        <div className="container">
+            <a className="navbar-brand" href="/">
+            <img src="./Image/acc.png" alt="" width="80" height="80" className="d-inline-block align-text-top"/>
             </a>
         </div>
           <div className="container-fluid">
-            {/* <a className="navbar-brand" href="#">
+            {/* <a className="navbar-brand" href="/">
               Navbar
             </a> */}
             <button
@@ -31,21 +29,22 @@ export default class navbar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0" >
+            <img src="./Image/home.png" alt="" width="40" height="40" className="d-inline-block align-text-top"/>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <a className="nav-link active" href="/">
                     Gallery
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active">SignUp</a>
+                  <a className="nav-link active" href="/">SignUp</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active">About Us</a>
+                  <a className="nav-link active" href="/">About Us</a>
                 </li>
               </ul>
               {/* <form className="d-flex">
@@ -62,7 +61,6 @@ export default class navbar extends Component {
             </div>
           </div>
         </nav>
-      </div>
-    );
-  }
+    </div>
+  )
 }
