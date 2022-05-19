@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "../style.css";
+import "./SignUp";
 
 export default function Header() {
   return (
@@ -29,20 +31,20 @@ export default function Header() {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0" >
             <img src="./Image/home.png" alt="" width="40" height="40" className="d-inline-block align-text-top"/>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">
+                  <Link className="nav-link active" to="/">
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">SignUp</a>
+                   <Link className="nav-link active" to="/SignUp">SignUp</Link> {/*className="nav-link active" href={require("./SignUp.js")}>SignUp</> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">About Us</a>
+                  <Link className="nav-link active" to="/">About Us</Link>
                 </li>
               </ul>
               {/* <form className="d-flex">

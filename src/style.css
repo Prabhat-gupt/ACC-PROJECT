@@ -140,10 +140,14 @@ form a.nav-link.active:hover{
     cursor: pointer;
     color: blue;
 }
-.para{
+.signup_para{
     text-align: center;
+    width: 536px;
 }
-
+.signup_para span{
+    color: blue;
+}
+/* home__container__para */
 /* HOME PAGE CSS START  */
 
 /* .h-primary{
@@ -157,6 +161,7 @@ form a.nav-link.active:hover{
     font-size: 82.031px;
     line-height: 42px;
 }
+
 #home{
     display: flex;
     flex-direction: column;
