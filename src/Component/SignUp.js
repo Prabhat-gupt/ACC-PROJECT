@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-import React from "react";
+import "./SignIn";
 import "../style.css";
 export default function SignUp() {
   return (
@@ -100,7 +101,9 @@ export default function SignUp() {
               </button>
               <p className="signup_para">
                 Already Have a account?
-                <Link to="/SignIn"><span className="click">Click Here</span>{" "}</Link>
+                <Link  to="/SignIn">
+                  <span className="click">Click Here</span>{" "}
+                </Link>
               </p>
             </div>
           </form>

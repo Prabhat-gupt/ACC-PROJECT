@@ -47,18 +47,33 @@ body {
       /* overflow-y: hidden;   Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #000205;
+
+.nav-link.active{
+    position: relative;
     text-decoration: none;
-    transition: color .15s;
-} 
-
-form a.nav-link.active:hover{
-
-    text-decoration: line-through;
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
 }
+.nav-link.active::after{
+    content: "";
+    position:absolute;
+    background-color: rgb(109, 101, 162);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.nav-link.active:hover{
+    color: #5144a4;
+}
+.nav-link.active:hover:after{
+    width: 100%;
+}
+
 .input-field{
     width: 100%;
 	padding:10px 0;
@@ -135,17 +150,37 @@ form a.nav-link.active:hover{
 }
 .click{
     color: #15535B;
+    text-decoration-color: #15535B;
 }
 .click:hover{
     cursor: pointer;
-    color: blue;
+    color: #15535B;
+    /* text-decoration-color: #15535B; */
+    text-decoration: none;
 }
 .signup_para{
     text-align: center;
     width: 536px;
 }
 .signup_para span{
-    color: blue;
+    color: #15535B;
+    /* text-decoration-color:#15535B; */
+    text-decoration: none;
+}
+
+.d-inline-block {
+    display: inline-block!important;
+    padding: 1px;
+    margin: -16px;
+    position: absolute;
+    top: 18px;
+    right: 288px;
+}
+.imagelogo{
+    display: inline-block!important;
+    position: relative;
+    top: -3px;
+    left: 20px;
 }
 /* home__container__para */
 /* HOME PAGE CSS START  */
