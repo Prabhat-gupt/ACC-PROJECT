@@ -17,8 +17,7 @@ function App() {
     
         </Routes>
         <br />
-        {/* <p>we are checking the git pull request</p>
-      <SignUp/> */}
+    
       </div>
     </Router>
   );

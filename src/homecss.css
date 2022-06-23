@@ -277,28 +277,7 @@ line-height: 266px; */
     top: 30px;
     color: white;
 }
-/* .carousel-indicators .active {
-    opacity: 1;
-}
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 22px;
-    height: 12px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
-    border-radius: 50%;
-} */
+
 .carousel .carousel-indicators button {
     border-radius: 50%;
     width: 22px;
@@ -317,54 +296,3 @@ line-height: 266px; */
 }
 
 
-/* .carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-    position: relative;
-    top: 221px;
-} */
-/* .slide-h2{
-    text-align: center;
-    position:relative;
-    top: 20px;
-} */
-
-
-/* .w-100{
-    position:relative;
-    top: 20px;
-    width: 21px;
-    height: 50px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 35px;
-    line-height: 70px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.slider.carousel.carousel-inner.carousel-item h3{
-    position:fixed;
-    top: 5px;
-}
-.firstslide h2{
-    position:relative;
-    left: 20px;
-    top: 50px;
-} */
-
-/* .slider{
-    background-color:  #1b0b32;
-    width: 90%!important;
-    height: 900px;
-    position: relative;
-    top: 140px;
-    left: 88px;
-    border-radius: 20px;
-    
-} */
