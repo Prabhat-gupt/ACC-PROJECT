@@ -17,20 +17,24 @@ export default function SignUp() {
     confirmpassword: ""
   })
   const register = async()=>{
-    console.log('hi')
     try{
-      const user = await createUserWithEmailAndPassword(auth,Signup.firstname,SignUp.lastname)
-      console.log(user)
+      if(Signup.password===Signup.confirmpassword){
+        const user = await createUserWithEmailAndPassword(auth,Signup.email,Signup.password,Signup.firstname)
+        console.log(user)
+      }
+      else{
+        alert('Password Not match!!')
+      }
     }catch(error){
       console.log(error.message)
     }
   }
-  
+
   const handleInput=(e)=>{
     const name = e.target.name;
     const value = e.target.value;
-
-    setSignup({ ...SignUp, [name]: value});
+    console.log(value);
+    setSignup({ ...Signup, [name]: value});
   }
   return (
     <div>
@@ -81,7 +85,7 @@ export default function SignUp() {
                     <input
                       type="text"
                       className="input-field"
-                      name="college"
+                      name="College"
                       placeholder="College"
                       onChange={handleInput}
                       value={Signup.College}
