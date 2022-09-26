@@ -1,0 +1,63 @@
+.container1{
+    margin-top: 10%;
+    align-items: center;
+    margin-left: 30%;
+}
+.alumniCard{
+    /* background: black; */
+
+    background: url("D:\\React JS\\acc-project\\src\\Image\\alcabi1.jpg") no-repeat ;
+    Width: 40vw;
+    Height: 50vh;
+    /* Top: 364.08px; */
+    /* Left: 344.66px; */
+    /* Radius: 5.46px;
+    margin-top: 6%;
+    Opacity: 69%; */
+}
+
+.appleImg img{
+    position: relative;
+    margin-top: -110%;
+    height: 3rem;
+    align-items: center;
+    margin-left: 45%;
+
+}
+.infoAlumni{
+    text-align: center;
+    margin-top: -50%;
+    color: white;
+    position: relative;
+
+}
+.alumniprofile{
+    /* border: 2px solid black; */
+    border-radius: 132px;
+    height: 27%;
+    width: 18%;
+    margin-top: 3%;
+    margin-left: 40%;
+    align-items: center;
+}
+.alumniprofile img{
+    align-items: center;
+    position: relative;
+    height: 16vh;
+    width: 7vw;
+}
+
+
+.alumni_overlay{
+    width: 40vw;
+    height: 50vh;
+    background: #1D9C9C;
+    opacity: .9;
+}
+
+
+.alumniName{
+    color: white;
+    position: relative;
+    margin-left: 42%;
+}

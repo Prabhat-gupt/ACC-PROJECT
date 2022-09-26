@@ -1,0 +1,43 @@
+.coreMember__section{
+    background-color: #871bff;
+    height: 15rem;
+
+}
+.img_coreMember{
+    width: 16%;
+}
+
+.upload__image{
+    background-color: #D07CC1;
+    color: black;
+    height: 3rem;
+    text-align: center;
+    width: 8rem;
+    border-radius: 31rem;
+    margin-left: 20.5%;
+    border: 2px solid black;
+}
+.upload__image:hover{
+    cursor: pointer;
+}
+
+
+.core__Member{
+    margin-left: 23%; 
+    color: white;  
+}
+.upload__button{
+    border-radius: 5px;
+}
+label {
+    width: 13rem;
+    line-height: 3rem;
+    margin-bottom: 1%;
+}
+
+.coreMember__button{
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+    
+}

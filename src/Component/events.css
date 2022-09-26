@@ -1,0 +1,17 @@
+.event__section h2{
+    text-align: center;
+    margin-top: 6%;
+    font-size: 2rem;
+}
+
+.event__section img{
+    margin-top: 1%;
+    width: 100%;
+    height: 79vh;
+}
+
+@media only screen and (max-width:992px) {
+    .event__section img{
+        height: 50vh;
+    }
+}

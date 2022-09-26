@@ -1,0 +1,16 @@
+.vision__section h2{
+    text-align: center;
+    margin-top: 3%;
+}   
+
+
+.vision__para{
+    background: #F5A70D;
+    width: auto;
+    border-radius: 2%;
+}
+
+.vision__para p{
+    padding: 7%;
+    font-size: 2rem;
+}

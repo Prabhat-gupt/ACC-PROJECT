@@ -1,0 +1,28 @@
+.footer__section{
+    background-color: black;
+    color:white;
+    height: 10%;
+}
+table{
+    margin-left: 45%;
+}
+table tr th{
+    /* border: 1px solid white; */
+    padding: auto;
+}
+tr th{
+    height: 4rem;
+    /* padding: 4rem; */
+    width: 14rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.image__data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.table__section{
+    margin-top: 4%;
+}

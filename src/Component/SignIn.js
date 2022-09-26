@@ -1,21 +1,104 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link,useNavigate } from "react-router-dom";
+// import {useHistory} from 'react-router-dom';
 import "./SignUp";
 import "../style.css";
 import "../signin.css";
+import axios from "axios";
 export default function SignIn() {
+
+    const [email,setEmail]=useState("");
+    const [password,setPassword]=useState("");
+    const [userType, setUserType] = useState("")
+    // const history = useHistory();
+
+    useEffect(()=>{
+      if(localStorage.getItem('user-info')){
+      }
+    })
+
+  //  async function login(e){
+  //   e.preventDefault();
+  //     console.warn(email,password);
+  //     let item ={
+  //       "email":{email},
+  //       "password":{password}
+  
+  //      }
+  //     console.log("signing",item)
+  //    let result = await fetch("http://localhost:5000/login",
+  //    {
+  //     method:'POST',
+  //    headers:{
+  //     "Content-Type":"application/json",
+  //    },
+  //    body:JSON.stringify({item})
+  //   });
+  //   result = await result.json()
+  //   localStorage.setItem("user-info",JSON.stringify(result))
+  //   console.log("Login Page");
+  //   if(result.status === 200 || !result ){
+  //     window.alert("Invalid Registration");
+  //     console.log("Invalid Resgistration");
+  //   }else{
+  //     window.alert(" Registration Successfull");
+  //     console.log("Registration Successfull");
+
+  //     // let navigate = useNavigate();
+  //     navigate("/");
+  //   }
+  //   }
+  let navigate = useNavigate()
+  ///login function 
+  const login=(e)=>{
+    e.preventDefault();
+    //  fetch("http://localhost:5000/login",
+    //    {
+    //     method:'POST',
+    //    headers:{
+    //     "Content-Type":"application/json",
+    //    },
+    //    body:{
+    //     email:email,
+    //     password:password,
+    //     User_Type:userType,
+    //    }
+    //   }).then((res)=>{
+    //       console.log(res);
+    //   }).catch((err)=>{
+    //     window.alert(err);
+    //     console.log(err);
+    //   })
+    axios({
+      url:'http://localhost:5000/login',
+      method:'POST',
+      data:{
+        email:email,
+        password:password,
+        User_Type:userType,
+      }
+    }).then((res)=>{
+        localStorage.setItem('Token',res.data.token);
+        navigate('/');
+    }).catch((err)=>{
+      console.log(err.data);
+      window.alert(err.response.data.error||"Internal Server Error")
+    })
+  }
+ 
   return (
     <div>
       {/* <img src="./Image/acc.png" alt="image"/> */}
       <div className="signup">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img
+            <img className="signinimg"
               id="upImage"
               src={require("../Image/signin.png")}
               alt=""
               height="500px"
               width="500px"
+              
             />
           </a>
         </div>
@@ -29,6 +112,7 @@ export default function SignIn() {
                 <div className="flex-container d-flex flex-column bd-highlight mb-3 forgot"> 
                   <div className="p-2 bd-highlight">
                     <input
+                     onChange={(e)=>setEmail(e.target.value)}
                       type="email"
                       className="input-field"
                       placeholder="Email Id"
@@ -40,11 +124,14 @@ export default function SignIn() {
                       type="text"
                       className="input-field"
                       placeholder="User Type"
+                     onChange={(e)=>setUserType(e.target.value)}
+                      
                       required
                     />
                   </div>
                   <div className="p-2 bd-highlight">
                     <input
+                    onChange={(e)=>setPassword(e.target.value)}
                       type="password"
                       className="input-field"
                       placeholder="Password"
@@ -61,8 +148,8 @@ export default function SignIn() {
 
                
               </div>
-              <button type="submit" className="btn btn-primary butt1">
-                Sign Up
+              <button type="submit" onClick={login} className="btn btn-primary butt1">
+                Sign In
               </button>
               <p className="signup_para1">
                 Create Account!

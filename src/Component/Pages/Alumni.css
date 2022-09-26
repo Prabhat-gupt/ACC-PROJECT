@@ -1,0 +1,53 @@
+.Alumni__header__section{
+    background: #D00064;
+}
+.Alunu__img{
+    height: 8rem;
+    margin-left: 17%;
+}
+.Alumni__button{
+    display: flex;
+    flex-direction: column;
+}
+.Alunu__img img{
+    border: 2px solid black;
+    border-radius: 6rem;
+    height: 5rem;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.upload__button button{
+    margin-left: 21%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    width: 6%;
+    background: #D07CC1;
+}
+.upload__image{
+    background-color: #D07CC1;
+    color: black;
+    height: 3rem;
+    text-align: center;
+    width: 8rem;
+    border-radius: 31rem;
+    margin-left: 20.5%;
+    border: 2px solid black;
+}
+.upload__image:hover{
+    cursor: pointer;
+}
+
+.Alumni__header__section h2{
+    position: relative;
+    top: 6rem;
+    margin-left: 36%;
+    color: white;
+}
+.form__label{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.data__input{
+    margin-left: 2%;
+    margin-top: 5%;
+}

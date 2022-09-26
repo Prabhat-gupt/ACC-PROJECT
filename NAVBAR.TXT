@@ -1,0 +1,156 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "./SignIn";
+import "../style.css";
+export default function SignUp() {
+  const handleSubmit= async(e)=>{
+      const response=await fetch("http://localhost:5000/signup",{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json",
+        },
+        body:JSON.stringify(e.target)
+      })
+      const res=await response.json()
+      console.log("my response",res)
+  }
+  return (
+    <>
+      {/* <img src="./Image/acc.png" alt="image"/> */}
+      <div className="signup">
+        <div className="signup__container__flex">
+          <div className="container">
+            {/* <a className="navbar-brand" href="/"> */}
+              <img
+                id="upImage"
+                src={require("../Image/signin.png")}
+                alt=""
+                className="signup__Image"
+                height="500px"
+                width="500px"
+              />
+            {/* </a> */}
+          </div>
+          {/* <div id="container" > */}
+          <div className="container contactbox">
+            <form className="fcontainer" >
+              <div className=" form__mobile container mb-3 flexcolor">
+                <div className="accimg__signup">
+                  <div className="accimg">
+                <img
+                  className="newimg"
+                  src="./Image/acc.png"
+                  alt=""
+                  height="80px"
+                  width="90px"
+                />
+                </div>
+                <div className="sign__up">
+                <h2 className="signup__signup">SignUp</h2>
+                </div>
+                </div>
+                <div className="d-flex flex-row bd-highlight mb-3 formc ">
+                  <div className="flex-container d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight input">
+                      <input
+                        name="first_name"
+                        id="first_name"
+                        type="text"
+                        className="input-field"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        type="email"
+                        id="email"
+                        className="input-field"
+                        placeholder="Email Id"
+                        name='email'
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        id="College"
+                        name="College"
+                        type="text"
+                        className="input-field"
+                        placeholder="College"
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        className="input-field"
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex-container d-flex flex-column bd-highlight mb-3">
+                    <div className="p-2 bd-highlight">
+                      <input
+                        id="last_name"
+                        name="last_name"
+                        type="text"
+                        className="input-field"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        id="User_Type"
+                        name="User_Type"
+                        type="text"
+                        className="input-field"
+                        placeholder="User Type"
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        type="text"
+                        name="phone_no"
+                        id="phone_no"
+                        className="input-field"
+                        placeholder="Phone No."
+                        required
+                      />
+                    </div>
+                    <div className="p-2 bd-highlight">
+                      <input
+                        name="confirm_password"
+                        id="confirm_password"
+                        type="password"
+                        className="input-field"
+                        placeholder="Confim Password"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" onClick={handleSubmit} className="btn btn-primary butt">
+                  Sign Up
+                </button>
+                <p className="signup_para">
+                  Already Have a account?
+                  <Link to="/SignIn">
+                    <span className="click">Click Here</span>{" "}
+                  </Link>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
