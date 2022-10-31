@@ -1,6 +1,6 @@
 
 .header__section{
-    background: url('D:\\React JS\\acc-project\\src\\Image\\GalleryHeader.jpg') no-repeat top center;
+    background: url('../../Image/GalleryHeader.jpg') no-repeat top center;
     /* background-color: #1FBDE0; */
     height: 14rem;
 }

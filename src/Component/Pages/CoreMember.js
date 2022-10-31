@@ -7,7 +7,7 @@ export default function CoreMember() {
         <h2>Core member</h2>
         <div className="Alumni__button">
           <div className="Alunu__img">
-            <img src="../Image/acc.png" alt="" />
+            <img src="src\Image\acc.png" alt="" />
           </div>
           <div className="upload__button">
             {/* <button>Upload */}

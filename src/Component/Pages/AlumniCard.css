@@ -6,7 +6,7 @@
 .alumniCard{
     /* background: black; */
 
-    background: url("D:\\React JS\\acc-project\\src\\Image\\alcabi1.jpg") no-repeat ;
+    background: url("../../Image/alcabi1.jpg") no-repeat ;
     Width: 40vw;
     Height: 50vh;
     /* Top: 364.08px; */

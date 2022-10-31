@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "name": "new",
   "version": "1.0.0",
   "description": "A signup page api",

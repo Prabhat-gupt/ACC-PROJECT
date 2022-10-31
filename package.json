@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "name": "acc-project",
   "version": "0.1.0",
   "private": true,

@@ -1,7 +1,7 @@
 import React from "react";
 import "./AlumniCard.css";
 // import galleryHeader from '../Image/GalleryHeader';
-import appleimg from "D:\\React JS\\acc-project\\src\\Image\\applelogo.png";
+import appleimg from "../../Image/applelogo.png"
 export default function AlumniCard() {
   return (
     <>
