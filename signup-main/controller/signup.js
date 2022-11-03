@@ -3,6 +3,7 @@ const md5 = require('md5');
 const bcrypt = require('bcrypt');
 const handlerror = require('../middleware/err')
 const  jwt  = require("jsonwebtoken")
+const core_member = require("../model/core_mem")
 require("dotenv").config();
 
 //JWT function
@@ -46,7 +47,7 @@ const postRegister = async (req, res) => {
             email: email.toLowerCase(),
             password: encryptedPassword,
           });
-
+        
         
         const token = createtoken(user._id,user.User_Type);
         console.log(token)
@@ -56,7 +57,7 @@ const postRegister = async (req, res) => {
       
   }catch(err){
     const error = handlerror(err);
-    res.status(400).json(error);
+    res.status(400).json(err);
   }
 }
 const getRegister = (req, res) => {
