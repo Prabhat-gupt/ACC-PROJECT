@@ -1,6 +1,9 @@
 .vision__section h2{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    font-size: 5rem;
+    font-weight: 700;
 }   
 
 
@@ -13,6 +16,6 @@
 
 .vision__para p{
     padding: 7%;
-    font-size: 2rem;
+    font-size: 40px;
     text-align: justify;
 }

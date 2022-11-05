@@ -6,11 +6,12 @@ const TodaysThought = () => {
   return (
     <div className='thoughtSection'>
 
-     <h1 className='thought_heading'>Todays Thought</h1>
+     <h1 className='thought_heading'>Thought</h1>
 
     <div className='thought__section'>
     <div className='thought__para'>
-        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <p>“When learning is purposeful, creativity blossoms. When creativity blossoms, thinking emanates. When thinking emanates, knowledge is fully lit. When knowledge is lit, economy flourishes.”<br></br>
+― Dr. A.P.J. Abdul Kalam</p>
     </div>
 
     <div className='thought__button' >

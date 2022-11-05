@@ -1,7 +1,9 @@
 .thought_heading{
     margin-left: 2%;
     margin-top: 1%;
-    color: gold;
+    color: #C8B616;
+    margin-top: 70px;
+    font-weight: 700;
 }
 
 .thought__section{
@@ -19,10 +21,16 @@
     text-decoration: none;
     background-color: #0F2027;
     color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-top: 60%;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 22%;
+    background: linear-gradient(180deg, #0F2027 0%, #0F2027 0.01%, #203A43 46.35%, #2C5364 100%);
+    box-shadow: 5.40359px 5.40359px 12.1581px rgba(0, 0, 0, 0.25);
+    border-radius: 34.0752px;
+    border: none;
+    width: 300px;
+    height: 79px;
+    
 }
 
 .thought__button{

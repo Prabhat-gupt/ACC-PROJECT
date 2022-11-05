@@ -42,23 +42,31 @@
 
 .hsign{
     position: relative;
-    top: -2rem;
-    right: 1%;
+    top: -5rem;
+    right: 2%;
     background: #15535B;
     color: #ffffff;
-    border-color: #15535B;
+    border-color: #000000;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     font-size: 20px;
     width: 100px;
     border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 33px;
+    
+    background: linear-gradient(180deg, #0F2027 0%, #0F2027 0.01%, #203A43 46.35%, #2C5364 100%);
+    box-shadow: 5.40359px 5.40359px 12.1581px rgba(0, 0, 0, 0.25);
+    border-radius: 34.0752px;
+    border: none;
+    width: 300px;
+    height: 79px;
+    
 }
 .pcontain{
     border: 0px #393939 solid;
     opacity: 0.79;
-    /* position: relative;
-    top: 184px;
-    right: 114px; */
-    background:#393939;
+    background-color:#393939;
     margin-left: -9%;
     margin-top: 15%;
     width: 100%;
@@ -72,6 +80,9 @@
     font-size: 35px;
     margin-left: 7%;
     margin-top: -14%;
+    background-color: #393939;
+    padding-left: 31px;
+    padding: 15px;
 }
 
 .para{
@@ -80,7 +91,7 @@
     width: 100%;
     height: fit-content;
     margin-left: 5%;
-    margin-top: 4%;
+    margin-top: 13%;
 }
 
 .para p{

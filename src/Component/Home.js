@@ -14,7 +14,7 @@ import Header from "./Header.js";
 import image1 from "../Image/palak-modified.png";
 import image2 from "../Image/yaman-modified.png";
 import image3 from "../Image/vanshita-modified.png";
-import image4 from "../Image/p8.jpg";
+import image4 from "../Image/ayushi-modified.png";
 export default function Home() {
   const navigate=useNavigate();
   useEffect(() => {
@@ -33,8 +33,7 @@ export default function Home() {
 
         <div className="pcontain">
           <p>
-            Don't worry if it doesn't work right.If everything did, you’d <br />{" "}
-            be out of a job.
+            Never let your success fade your hunger to learn, <br></br>if it does, remind yourself that if you are here then only because of it.
           </p>
         </div>
         <Link to="/SignUp">
@@ -52,8 +51,9 @@ export default function Home() {
       <div className="home__founder__developer bd-highlight mb-3 homeflex">
         <div className="flex-container d-flex flex-column bd-highlight mb-3 flex1">
           <h2>FOUNDER</h2>
-          <h3></h3>
-          Founded by the students of the batch 2017-2021
+          <h3>
+          Founded by the students of the <br></br> batch 2017-2021
+          </h3>
         </div>
 
         <div className="home__development__para flex-container d-flex flex-column bd-highlight mb-3 flex2">
@@ -79,8 +79,7 @@ export default function Home() {
                 alt=""
               ></img>
             </div>
-
-            <div className="secondalumina  ">
+            <div className="secondalumina">
               <h3>Designing Head</h3>
               <h5>Btech CSE</h5>
             </div>
