@@ -39,3 +39,26 @@
     margin-top: 6%;
     margin-left: -10%;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 896px) {
+    p{
+        width: 35%;
+        text-align: justify;
+        margin-top: 4%;
+        margin-left: -21%;
+    }
+
+    .img__infoAlumni img{
+        margin-left: 6rem;
+    }
+
+    .heading__name{
+        margin-top: 25%;
+    }
+    .heading__name h2,h5{
+        margin-left: 8%;
+    }
+    .work__experience1 h2{
+        margin-left: 10%;
+    }
+}

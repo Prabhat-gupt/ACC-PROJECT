@@ -61,3 +61,24 @@
     position: relative;
     margin-left: 42%;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 896px) {
+    .alumniCard{
+        width: 85vw;
+        height: 50vh;
+        margin-left: -30%;
+    }
+    .alumni_overlay{
+        width: 85vw;
+    }
+    .appleImg img{
+        margin-bottom: 105%;
+    }
+    .infoAlumni{
+        margin-top: -90%;
+    }
+    .alumniprofile img{
+        width: 29vw;
+        margin-left: -190;
+    }
+}

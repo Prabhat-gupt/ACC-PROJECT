@@ -17,58 +17,10 @@ export default function SignIn() {
       }
     })
 
-  //  async function login(e){
-  //   e.preventDefault();
-  //     console.warn(email,password);
-  //     let item ={
-  //       "email":{email},
-  //       "password":{password}
-  
-  //      }
-  //     console.log("signing",item)
-  //    let result = await fetch("http://localhost:5000/login",
-  //    {
-  //     method:'POST',
-  //    headers:{
-  //     "Content-Type":"application/json",
-  //    },
-  //    body:JSON.stringify({item})
-  //   });
-  //   result = await result.json()
-  //   localStorage.setItem("user-info",JSON.stringify(result))
-  //   console.log("Login Page");
-  //   if(result.status === 200 || !result ){
-  //     window.alert("Invalid Registration");
-  //     console.log("Invalid Resgistration");
-  //   }else{
-  //     window.alert(" Registration Successfull");
-  //     console.log("Registration Successfull");
-
-  //     // let navigate = useNavigate();
-  //     navigate("/");
-  //   }
-  //   }
   let navigate = useNavigate()
-  ///login function 
+  
   const login=(e)=>{
     e.preventDefault();
-    //  fetch("http://localhost:5000/login",
-    //    {
-    //     method:'POST',
-    //    headers:{
-    //     "Content-Type":"application/json",
-    //    },
-    //    body:{
-    //     email:email,
-    //     password:password,
-    //     User_Type:userType,
-    //    }
-    //   }).then((res)=>{
-    //       console.log(res);
-    //   }).catch((err)=>{
-    //     window.alert(err);
-    //     console.log(err);
-    //   })
     axios({
       url:'http://localhost:5000/login',
       method:'POST',

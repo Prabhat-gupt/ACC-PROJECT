@@ -11,10 +11,10 @@ import Vision from "./Vision.js";
 import Footer from "./Footer.js";
 import AmityLog from "../Image/AmityLogo_home_page.png"
 import Header from "./Header.js";
-// D:\React JS\acc-project\src\Image\AmityLogoHomePage.png
-// import AlumniInfo from "./Pages/AlumniInfo";
-// D:\React JS\acc-project\src\Image\AmityLogo_home_page.png
-
+import image1 from "../Image/palak-modified.png";
+import image2 from "../Image/yaman-modified.png";
+import image3 from "../Image/vanshita-modified.png";
+import image4 from "../Image/p8.jpg";
 export default function Home() {
   const navigate=useNavigate();
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
 
         <div className="pcontain">
           <p>
-            Don’t worry if it doesn’t work right.If everything did, you’d <br />{" "}
+            Don't worry if it doesn't work right.If everything did, you’d <br />{" "}
             be out of a job.
           </p>
         </div>
@@ -52,18 +52,15 @@ export default function Home() {
       <div className="home__founder__developer bd-highlight mb-3 homeflex">
         <div className="flex-container d-flex flex-column bd-highlight mb-3 flex1">
           <h2>FOUNDER</h2>
-          <p>
-            Sample text. Click to select the text box. <br /> Click again or
-            double click to start <br /> editing the text.
-          </p>
+          <h3></h3>
+          Founded by the students of the batch 2017-2021
         </div>
 
         <div className="home__development__para flex-container d-flex flex-column bd-highlight mb-3 flex2">
-          <h2>DEVELOPMENT</h2>
-          <p>
-            Sample text. Click to select the text box. <br /> Click again or
-            double click to start <br /> editing the text.
-          </p>
+          <h2>DEVELOPER</h2>
+          <h3>
+            Developed by students of batch 2020-2024
+          </h3>
         </div>
       </div>
 
@@ -77,31 +74,31 @@ export default function Home() {
             </div>
             <div className="firstslideimg1 ">
               <img
-                className="d-block w-100"
-                src={require("../Image/acc.png")}
+                className="d-block w-100 set"
+                src={image1}
                 alt=""
               ></img>
             </div>
 
             <div className="secondalumina  ">
-              <h3>Management Head</h3>
+              <h3>Designing Head</h3>
               <h5>Btech CSE</h5>
             </div>
-            <div className="firstslideimg2">
-              <img src={require("../Image/hb.png")} alt=""></img>
+            <div className="firstslideimg2 ">
+              <img  className="set" src={image2} alt=""></img>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <h2 className="carouse_heading">CORE Team Members</h2>
             <div className="firstalumina d-block w-100 ">
-              <h3>Technical Head</h3>
+              <h3>Social Media Head</h3>
               <h5>Btech CSE</h5>
             </div>
             <div className="firstslideimg1 ">
               
               <img
-                className="d-block w-100"
-                src={require("../Image/acc.png")}
+                className="d-block w-100 set"
+                src={image3}
                 alt=""
               ></img>
               
@@ -111,28 +108,7 @@ export default function Home() {
               <h5>Btech CSE</h5>
             </div>
             <div className="firstslideimg2">
-              <img src={require("../Image/hb.png")} alt=""></img>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <h2 className="carouse_heading">CORE Team Members</h2>
-            <div className="firstalumina d-block w-100 ">
-              <h3>Technical Head</h3>
-              <h5>Btech CSE</h5>
-            </div>
-            <div className="firstslideimg1 ">
-              <img
-                className="d-block w-100"
-                src={require("../Image/acc.png")}
-                alt=""
-              ></img>
-            </div>
-            <div className="secondalumina  ">
-              <h3>Management Head</h3>
-              <h5>Btech CSE</h5>
-            </div>
-            <div className="firstslideimg2">
-              <img src={require("../Image/hb.png")} alt=""></img>
+              <img src={image4} className="set" alt=""></img>
             </div>
           </Carousel.Item>
         </Carousel>

@@ -6,34 +6,22 @@
     top: 29%;
     left: 11%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 100;
     font-size: 7vw;
     line-height: 62px;
-    /* position: absolute;
-width: 3541px;
-height: 505.43px;
-left: 213px;
-top: 1013px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 218.031px;
-line-height: 266px; */
+}
+.set{
+    width: auto;
 }
 #home{
     display: flex;
     flex-direction: column;
     margin-left: 12%;
     height: 74vh;
-    /* justify-content: center;
-    align-items: center; */
-
 }
 
 .AmityLogo_HomePage{
-    height: 96px;
     width: 107px;
     margin-top: 6%;
 }
@@ -52,25 +40,6 @@ line-height: 266px; */
     margin-bottom: 0px;
 }
 
-/* #home{
-    background: url("Image/hb.png") no-repeat center center/cover;
-    height: 103vh;
-    width: 100%;
-    z-index: -1;
-    opacity: .89;
-    
-} */
-/* #home p{
-    color: #ffffff;
-    position: relative;
-    top: 184px;
-    right: 114px;
-    font-size: 35px;
-    background-color: black;
-    background: #393939;
-    opacity: 0.79;
-    width: 1307px;
-} */
 .hsign{
     position: relative;
     top: -2rem;
@@ -84,7 +53,7 @@ line-height: 266px; */
     border-radius: 10px;
 }
 .pcontain{
-    border: 2px #393939 solid;
+    border: 0px #393939 solid;
     opacity: 0.79;
     /* position: relative;
     top: 184px;
@@ -141,7 +110,7 @@ line-height: 266px; */
 
 .homeflex .flex2{
     /* text-align: right; */
-    margin-left: 23%;
+    margin-left: 30%;
 }
 
 .slider{
@@ -323,43 +292,46 @@ line-height: 266px; */
     align-items: center;
 }
 
-@media only screen and (max-width: 992px) {
-    body{
-        overflow-x: hidden;
+@media only screen and (min-width: 300px) and (max-width: 896px) {
+    
+    .AmityLogo_HomePage{
+        width: 78px;
+        margin-left: -4%;
+    }
+    .AmityName{
+        margin-top: -14%;
+        margin-left: 21%;
+    }
+    .pcontain p{
+        margin-top: 1%;
+    }
+    .hsign{
+        margin-top: 21%;
     }
     .h-primary{
-        margin: -6%;
-        font-size: 204%;
-        margin-left: 19%;
-        margin-top: -24%;  
-    }
-    #home {
-        display: flex;
-        flex-direction: column;
-        height: 74vh;
-    }
-    .pcontain{
         position: relative;
-        margin-top: 30%;
-        top: 16%;
-        margin-left: -6%;
+        top: 11%;
+        left: 21%;
     }
     .para p{
-        font-size: 35px;
-    line-height: 8vw;
-    margin-top: 32%;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: 31%;
     }
 
-    #carousel{
-        margin-top: -37%;
+    .homeflex .flex2{
+        margin-left: 1%;
     }
-
-
-
-}
-@media only screen and (max-width: 820px){
-        .homeflex .flex2{
-            margin-left: 4%
-            ;
-        }
+    #home::before{
+        content: "";
+    background: url("Image/hb.png") no-repeat center center/cover;
+    /* position: absolute; */
+    /* top: 0px;
+    left: 0px;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    margin-bottom: 0px; */
+    }
 }

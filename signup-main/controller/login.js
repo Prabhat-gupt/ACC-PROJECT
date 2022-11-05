@@ -55,6 +55,7 @@ const PostLogin = async (req, res) => {
     res.status(400).send({error:"Enter correct Credentials"})
   } catch (err) {
     const errors = handlerror(err);
+      console.log(err);
       res.status(400).json({errors});
   }
 }

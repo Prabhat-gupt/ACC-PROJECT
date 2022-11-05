@@ -5,12 +5,14 @@
 
 
 .vision__para{
-    background: #F5A70D;
+    background:  #0B7483;
     width: auto;
-    border-radius: 2%;
+    color: white;
+    
 }
 
 .vision__para p{
     padding: 7%;
     font-size: 2rem;
+    text-align: justify;
 }
